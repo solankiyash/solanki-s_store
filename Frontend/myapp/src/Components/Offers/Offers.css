@@ -1,0 +1,57 @@
+.offers {
+    width: 65%;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 70px;
+    background: linear-gradient(180deg, #FD8451 0%, #FFBD6F 60%);
+    border-radius: 10px;
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.offers-left button {
+    width: 260px;
+    height: 70px;
+    border-radius: 35px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Ensure the image does not overflow its container */
+    overflow: hidden; /* This prevents overflow */
+}
+
+.offers-right img {
+    max-width: 50%; /* Ensures the image scales with its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 30px;
+}

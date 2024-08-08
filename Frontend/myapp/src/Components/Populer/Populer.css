@@ -1,0 +1,102 @@
+.populer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* height: 90vh; */
+}
+.populer h1{
+    color: #171717;
+    font-size: 40px;
+    font-weight: 500;
+}
+.populer hr{
+    width: 200px;
+    height: 3px;
+    border-radius: 10px;
+    background: #252525;
+}
+.populer-item{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    margin-bottom: 150px;
+    /* gap: 30px; */
+
+}
+/* Example CSS */
+.icon-star-empty {
+    color: #ddd; 
+    font-size: 20px;
+  }
+  
+  .icon-star-full {
+    color: #ef5c51; /* Color for filled star */
+    font-size: 20px;
+  }
+  
+  .swiper-slide .item img{
+    width: 100%;
+    margin: 0px !important;
+  }
+
+@media(max-width:1280px){
+    .populer{
+        height: 70vh;
+    }
+    .populer h1{
+        font-size: 40px;
+    }
+    .populer hr{
+        width: 160px;
+        height: 4px;
+    }
+    .populer-item{
+        gap: 20px;
+        margin-top: 30px;
+    }   
+}
+
+@media(max-width:1024px){
+    .populer{
+        height: 60vh;
+    }
+    .populer h1{
+        font-size: 30px;
+    }
+    .populer hr{
+        width: 120px;
+        height: 3px;
+    }
+    .populer-item{
+        gap: 15px;
+        margin-top: 20px;
+    }   
+}
+
+@media(max-width:800px){
+    .populer{
+        height: 50vh;
+        gap: 6px;
+    }
+    .populer h1{
+        font-size: 20px;
+    }
+    .populer hr{
+        width: 100px;
+    }
+    .populer-item{
+        gap: 5px;
+    }   
+}
+@media(max-width:500px){
+    .populer{
+        height: 90vh;
+    }
+    .populer-item{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:20px
+    }
+}
